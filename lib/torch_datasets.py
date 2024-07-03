@@ -364,7 +364,7 @@ class RM_directional(RM):
             theta3d, dist3d = utils_coords.spherical_slices(tx_coords=tx_coords, theta_base=tx_theta, z_max=self.z_max, z_step=self.z_step)
             inputs.extend([utils_coords.project_gain(phi=phi, theta=theta3d[k,:], gain_array=tx_antenna_pattern, theta_max=los_theta_max, normalize=True, dist=dist3d[k,:], z_max=self.z_max) for k in range(theta3d.shape[0])])
         if self.azimuth:
-            inputs.append(phi)
+            inputs.append(phi / np.pi)
         if self.elevation:
             inputs.extend([theta_build / torch.pi, theta_floor / torch.pi, theta_veg / torch.pi])
         if self.img:

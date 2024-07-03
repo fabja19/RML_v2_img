@@ -1,0 +1,6 @@
+model:
+  init_args:
+    scheduler_params:
+      patience: 8
+cb_early_stopping:
+  patience: 20 
