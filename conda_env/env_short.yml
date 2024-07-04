@@ -1,5 +1,7 @@
 name: rmbd_env
 channels:
+  - pytorch
+  - nvidia
   - defaults
   - conda-forge
 dependencies:
