@@ -81,7 +81,12 @@ class LitRM(pl.LightningDataModule):
         ### shuffle the validation set so we see different outputs in TB every epoch
         return torch.utils.data.DataLoader(self.val_set, **{**self.loader_params, "shuffle" : True})
 
-    def test_dataloader(self, shuffle=False):
+    def test_dataloader(self, shuffle=False, seed=None):
+        ### 
+        if seed is not None:
+            np.random.seed(seed)
+            torch.manual_seed(seed)
+            torch.backends.cudnn.deterministic = True
         return torch.utils.data.DataLoader(self.test_set, **{**self.loader_params, "shuffle" : shuffle})
     
     def predict_dataloader(self):

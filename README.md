@@ -1,8 +1,8 @@
-# Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments
+# Radio Map Prediction from Images and Application to Coverage Optimization
 
-This is the official implementation of our experiments on learning radio map estimation with CNNs, described in "Radio Map Estimation - An Open Dataset with Directive Transmitter Antennas and Initial Experiments" (soon on arXiv).
+This is the official implementation of our experiments on learning radio map estimation from images and optionally additional unclassified height maps with CNNs, described in "Radio Map Prediction from Images and Application to Coverage Optimization". Note that this is an updated version of our repo [RML](https://github.com/fabja19/RML) with the focus shifted to the prediction from images and an additional new application to network optimization ([notebook](coverage_optimization.ipynb)). 
 
-![alt text](sample.png "Sample")
+![alt text](sample_img.png "Sample")
 
 ## Requirements
 
@@ -26,7 +26,7 @@ python main_cli.py fit --model=<model name> --config=<path to config>
 
 Here, ```<model name>``` can be any of  _LitRadioUNet, LitPMNet_ or _LitUNetDCN_ and the configs for the dataset class corresponding to our experiments can be found in  the directory [configs/data](configs/data). The training procedure will save the results including a model checkpoint, log file, config and Tensorboard log in a subdirectory of [./logs](./logs).
 
-Instead of training from scratch, you can [download](https://zenodo.org/uploads/10210089) the checkpoints and configs for some of the trained models.
+Instead of training from scratch, you can [download](https://zenodo.org/uploads/10210089) the checkpoints and configs for some of the trained models. The checkpoints for this updated version are contained in *model_checkpoints_v2_img.zip*.
 
 Trained models can be evaluated on the test set by running
 

@@ -485,7 +485,7 @@ class LitUNetDCN(LitCNN):
                  params_up={},
                  dropout=0,
                  channel=32,
-                 depth=5,
+                 depth=4,
                  img_size=256,
                  batchnorm=True,
                  res=True,
@@ -581,6 +581,7 @@ LitModelDict = {
     'LitUNet_ViT'   :   LitUNet_ViT,
     'LitPMNet'      :   LitPMNet,
     'LitUNet_DCN_old2'  :   LitUNet_DCN_old2,
+    'LitUNetDCN'  :   LitUNetDCN,
     'LitRadioUNet'  :   LitRadioUNet,
     'LitRadioUNet2'  :   LitRadioUNet2,
 }
