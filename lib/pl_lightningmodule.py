@@ -485,7 +485,7 @@ class LitUNetDCN(LitCNN):
                  params_up={},
                  dropout=0,
                  channel=32,
-                 depth=4,
+                 depth=3,
                  img_size=256,
                  batchnorm=True,
                  res=True,
