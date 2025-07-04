@@ -4,19 +4,20 @@ This is the official implementation of our experiments on learning radio map est
 
 If you find this useful and use our code, please cite our paper:
 
-> Fabian Jaensch, Giuseppe Caire and Begüm Demir, "Radio Map Prediction from Images and Application to Coverage Optimization", IEEE Transactions on Wireless Communications, in print.
+> [Fabian Jaensch, Giuseppe Caire and Begüm Demir, "Radio Map Prediction from Images and Application to Coverage Optimization", IEEE Transactions on Wireless Communications, early access.](https://doi.org/10.1109/TWC.2025.3583171)
 ```bibtex
-@article{jaensch2025radiomap,
-      title={Radio Map Prediction from Images and Application to Coverage Optimization"}, 
-      author={Fabian Jaensch and Giuseppe Caire and Begüm Demir},
-      journal={IEEE Transactions on Wireless Communications},
-      page    = {in print},
-      note    = {accepted}
-
-}
+@ARTICLE{jaensch25,
+  author={Jaensch, Fabian and Caire, Giuseppe and Demir, Begüm},
+  journal={IEEE Transactions on Wireless Communications}, 
+  title={Radio Map Prediction from Aerial Images and Application to Coverage Optimization}, 
+  year={2025},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Buildings;Three-dimensional displays;Ray tracing;Solid modeling;Wireless communication;Predictive models;Optimization;Urban areas;Adaptation models;Accuracy;Convolutional Neural Networks;Machine Learning;Path loss;Radio map;RSSI;Coverage},
+  doi={10.1109/TWC.2025.3583171}}
 ```
 
-It will appear soon in IEEE Transactions on Wireless Communications, the preprint can already be found on [arxiv](https://arxiv.org/abs/2410.17264).
 
 ![alt text](sample_img.png "Sample")
 
