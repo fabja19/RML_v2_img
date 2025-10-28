@@ -25,7 +25,7 @@ Note that this is an updated version of our repo [RML](https://github.com/fabja1
 
 ## Requirements
 
-The dataset can be downloaded from [here](https://zenodo.org/uploads/10210089) and is expected to be unpacked to the directory *./dataset*.
+The dataset can be downloaded from [here](https://doi.org/10.5281/zenodo.10210088) and is expected to be unpacked to the directory *./dataset*.
 
 To install the required packages via conda run:
 
@@ -45,7 +45,7 @@ python main_cli.py fit --model=<model name> --config=<path to config>
 
 Here, ```<model name>``` can be any of  _LitRadioUNet, LitPMNet_ or _LitUNetDCN_ and the configs for the dataset class corresponding to our experiments can be found in  the directory [configs/data](configs/data). The training procedure will save the results including a model checkpoint, log file, config and Tensorboard log in a subdirectory of [./logs](./logs).
 
-Instead of training from scratch, you can [download](https://zenodo.org/uploads/10210089) the checkpoints and configs for some of the trained models.
+Instead of training from scratch, you can [download](https://doi.org/10.5281/zenodo.10210088) the checkpoints and configs for some of the trained models.
 
 Trained models can be evaluated on the test set by running
 
